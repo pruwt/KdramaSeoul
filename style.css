@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #B581B8;
+  overflow: hidden;
+}
+li >a {
+  float: right;
+}
+
+li >a {
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+}
+
+#logo-name{
+float: left;
+padding: 18px 16px;
+}
+
+footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   /* height: 5%; */
+   background-color: #B581B8;
+   color: rgb(0, 0, 0);
+   text-align: center;
+   padding: 15px;
+}
+
+  
