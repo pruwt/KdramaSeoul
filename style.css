@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family:'Inter';
 }
 
 /* navbar */
@@ -9,17 +10,21 @@ ul {
   background-color: #B581B8;
   overflow: hidden;
 }
-li >a {
-  float: right;
-}
+
 
 li >a {
+  float: right;
   display: block;
   text-align: center;
   padding: 18px 16px;
-  text-decoration: none;
-font-size: 20px;
+  text-decoration:none;
+  font-size: 20px;
+  color: black;
+  font-weight:bold;
 
+}
+li>a:hover{
+  color: #fde0fd;
 }
 
 #logo-name{
@@ -104,6 +109,7 @@ button[type="submit"]:hover{
   opacity: 0.7;
 }
 .intro{
+ margin: 40px;
   margin-bottom: 100px;
 }
 
@@ -123,15 +129,26 @@ h2{
   
 }
 
-.btn-deets,button > a{
+.btn-deets{
   text-decoration: none;
   height: 52px;
   width: 171px;
   border: none;
   background-color: #C7A3C9;
-  color: black;
+  color: #C7A3C9;
   border-radius: 10px;
   font-weight: 700;
 }
+.btn-deets:hover{
+  background-color:#472b48;
+}
+
+.btn-deets>a{
+  text-decoration: none;
+  color: black;
+}
+  /*end of home page styling  */
+  
+  /* list page */
 
   
