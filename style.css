@@ -108,6 +108,8 @@ font:bold;
 button[type="submit"]:hover{
   opacity: 0.7;
 }
+
+/* end of search bar */
 .intro{
  margin: 40px;
   margin-bottom: 100px;
@@ -150,5 +152,32 @@ h2{
   /*end of home page styling  */
   
   /* list page */
-
+  .list-container{
+    margin: 30px;
+  }
+.list-container>div>form{
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
   
+}
+  .list-text{
+    text-align: center;
+    margin: 50px;
+    line-height: 30px;
+  }
+
+  .list-container>.search-bar{
+    text-align: center;
+    
+  }
+  .list-container>.search-bar input[type="text"]{
+    width: 500px;
+    opacity: 1.0;
+    background-color: #D9D9D9;
+    font-weight: 500;
+    color: black;
+padding: 15px;
+
+  }
+
