@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   font-family:'Inter';
+  box-sizing: border-box;
 }
-
+/* body */
 /* navbar */
 ul {
   list-style-type: none;
@@ -153,7 +154,7 @@ h2{
   
   /* list page */
   .list-container{
-    margin: 30px;
+    margin: 20px;
   }
 .list-container>div>form{
     display: inline-block;
@@ -163,7 +164,7 @@ h2{
 }
   .list-text{
     text-align: center;
-    margin: 50px;
+    margin: 40px;
     line-height: 30px;
   }
 
@@ -173,6 +174,7 @@ h2{
   }
   .list-container>.search-bar input[type="text"]{
     width: 500px;
+    height: 50px;
     opacity: 1.0;
     background-color: #D9D9D9;
     font-weight: 500;
@@ -180,4 +182,36 @@ h2{
 padding: 15px;
 
   }
+.image-container{
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  align-items: center;
+   flex-wrap: wrap;/* can move to the next line*/
+   width: 90%;
+}
+
+.dramacard>img{
+  width: 200px;
+  height: 270px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.dramaname{
+  text-align: center;
+  margin: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.buttons-pg2{
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+}
+
 
