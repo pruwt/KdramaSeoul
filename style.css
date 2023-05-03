@@ -36,7 +36,7 @@ font-weight:bold;
 }
 .hero-img{
   /* linear gradient to see the text better , darkens bg */
-  background-image: url('bproposalcopy.png');
+  background-image: url('/images/bproposalcopy.png');
   /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
   margin: 20px;
   margin-bottom: 50px;
@@ -187,31 +187,41 @@ padding: 15px;
   margin-top: 40px;
   margin-bottom: 60px;
   display: flex;
-  justify-content:space-evenly;
-  flex-direction: row;
-  align-items: center;
-   flex-wrap: wrap;/* can move to the next line*/
+  justify-content:space-between;
+  flex-direction:row;
+  align-items:center;
+   flex-wrap:wrap;/* can move to the next line*/
    width: 90%;
+   gap: 8px;
+   
 }
 
 .dramacard>img{
+  margin: 10px;
   width: 200px;
-  height: 270px;
+  height: 260px;
   border-radius: 10px;
   cursor: pointer;
   
+  
 }
 .dramaname{
-  text-align: center;
-  margin: 8px;
+  text-align:center;
+  /* margin-right: 2px; */
+  margin: 6px;
   font-weight: 700;
   font-size: 18px;
 }
 
 .buttons-pg2{
   position: relative;
-  bottom: 30px;
+  bottom: 40px;
   text-align: center;
 }
 
+.buttons-pg3{
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+}
 
