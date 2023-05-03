@@ -192,8 +192,8 @@ padding: 15px;
   align-items:center;
    flex-wrap:wrap;/* can move to the next line*/
    width: 90%;
+   /* gap: 8px; */
    gap: 8px;
-   
 }
 
 .dramacard>img{
@@ -219,7 +219,7 @@ padding: 15px;
   text-align: center;
 }
 
-.buttons-pg3{
+.buttons-pg3,.buttons-pg4{
   position: relative;
   bottom: 50px;
   text-align: center;
