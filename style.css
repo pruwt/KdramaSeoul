@@ -258,16 +258,26 @@ object-fit: contain;
 }
 
 .details-container > img {
-  flex: 1;
-  max-width: 90%;
-  height:100px;
+  /* flex: 1; */
+  /* max-width: 80%; */
+  /* height:100px; */
+  float: left;
 }
 
 .details-container > .deets-text {
   flex: 1;
   margin-left: 20px;
-  background-color:#dfcfdf;
+  /* background-color:#dfcfdf; */
   padding: 30px;
-  text-align: center;
+  text-align:left;
+  float: left;
+
 }
+.details-container > .deets-text >h3,h4{
+  text-align:center;
+  margin: 10px;
+} 
+
+
+
 
