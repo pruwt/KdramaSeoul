@@ -13,7 +13,7 @@ ul {
 }
 
 
-li >a {
+li>a {
   float: right;
   display: block;
   text-align: center;
@@ -34,6 +34,9 @@ padding: 18px 16px;
 font-size: 20px;
 font-weight:bold;
 }
+
+/* navbar end */
+/* hero image */
 .hero-img{
   /* linear gradient to see the text better , darkens bg */
   background-image: url('/images/bproposalcopy.png');
@@ -57,6 +60,9 @@ font-weight:bold;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* hero image end */
+/* footer */
  footer{ 
   position: fixed;
    left: 0;
@@ -227,57 +233,37 @@ padding: 15px;
 /*end list page */
 /* details page */
 
-/*flex way 
-.details-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 20px;
-}
-.details-container>div>img{
-flex: 0 0 80%;
- max-width:100%;// aspect ratio
-object-fit: contain;
-
-}
-
-.deets-text{
-  flex: 1 1 20%;
-  margin-left: 20px;
-}
-*/
-
-.details-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  height: 400px;
+.hero-imgdeet{
+  /* linear gradient to see the text better , darkens bg */
+  background-image: url('/images/CLOY\ HERO.jpg');
+  /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+  margin: 20px;
+  margin-bottom: 30px;
+  /* width: 1500px; */
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.details-container > img {
-  /* flex: 1; */
-  /* max-width: 80%; */
-  /* height:100px; */
-  float: left;
-}
-
-.details-container > .deets-text {
-  flex: 1;
-  margin-left: 20px;
-  /* background-color:#dfcfdf; */
-  padding: 30px;
+.hero-deettext{
   text-align:left;
-  float: left;
+  font-size: 25px;
+  font: bold;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  overflow:hidden;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.hero-deettext > span{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  overflow:hidden;
 
 }
-.details-container > .deets-text >h3,h4{
-  text-align:center;
-  margin: 10px;
-} 
-
 
 
 
