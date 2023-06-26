@@ -232,38 +232,23 @@ padding: 15px;
 }
 /*end list page */
 /* details page */
-
-.hero-imgdeet{
-  /* linear gradient to see the text better , darkens bg */
-  background-image: url('/images/CLOY\ HERO.jpg');
-  /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
-  margin: 20px;
-  margin-bottom: 30px;
-  /* width: 1500px; */
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.details-container{
+  /* overflow: hidden;
+  width: 100%; */
 }
-
-.hero-deettext{
-  text-align:left;
-  font-size: 25px;
-  font: bold;
-  color: rgb(0, 0, 0);
-  position: absolute;
-  overflow:hidden;
-  top: 50%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+.details-img,.details-text{
+float: left;
+width: 50%;
+margin-right: 20px;
+/* overflow: hidden;  */
+padding: 20px;
+  
 }
-.hero-deettext > span{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  overflow:hidden;
-
-}
-
+.details-img > img{
+  margin: 10px;
+  width: 200px;
+  height: 260px;
+  border-radius: 10px;cursor: pointer;
+  }
 
 
