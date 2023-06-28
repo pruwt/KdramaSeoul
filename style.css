@@ -64,14 +64,16 @@ font-weight:bold;
 /* hero image end */
 /* footer */
  footer{ 
-  position: fixed;
+  position:fixed;
    left: 0;
    bottom: 0;
-   width: 100%;
+   right: 0;
+   width: 100%;   /*basically trying to use the default version of the footer w/o the*/
    background-color: #B581B8;
    color: rgb(0, 0, 0);
    text-align: center;
-   padding: 10px;
+   height:2.5rem;
+   padding-top: 10px;
    
 }
 footer>p{
@@ -233,22 +235,50 @@ padding: 15px;
 /*end list page */
 /* details page */
 .details-container{
-  /* overflow: hidden;
-  width: 100%; */
+  /* display: grid; */
 }
-.details-img,.details-text{
-float: left;
-width: 50%;
-margin-right: 20px;
-/* overflow: hidden;  */
-padding: 20px;
-  
+.details{
+  float: left;
+  width: 40%;
+  padding: 13px;
+  margin-left: 10px;
+  margin-right: 20px;
+   overflow: hidden;
 }
-.details-img > img{
+.details img{
   margin: 10px;
-  width: 200px;
-  height: 260px;
-  border-radius: 10px;cursor: pointer;
+  width: 400px;
+  height: 460px;
+  /* border-radius: 20px; */
+  cursor: pointer;
+  padding-left: 30px;
+
+}
+.drama-details{
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  
+
+}
+.trailer{
+  
+  height: 52px;
+  width: 171px;
+  border: none;
+  background-color: #C7A3C9;
+  color: #C7A3C9;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.trailer >a{
+  text-decoration: none;
+  color: black;
+}
+
+/* responsiveness details */
+@media screen and (max-width :600px) {
+  .details{
+    width: 100%;
   }
-
-
+}
