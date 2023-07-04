@@ -43,11 +43,13 @@ font-weight:bold;
   /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
   margin: 20px;
   margin-bottom: 50px;
+  width: 1480px;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  /* width: 97%; */
 }
 .hero-txt{
   text-align: center;
@@ -64,14 +66,16 @@ font-weight:bold;
 /* hero image end */
 /* footer */
  footer{ 
-  position: fixed;
+  position:fixed;
    left: 0;
    bottom: 0;
-   width: 100%;
+   right: 0;
+   width: 100%;   /*basically trying to use the default version of the footer w/o the*/
    background-color: #B581B8;
    color: rgb(0, 0, 0);
    text-align: center;
-   padding: 10px;
+   height:2.5rem;
+   padding-top: 10px;
    
 }
 footer>p{
@@ -202,7 +206,7 @@ padding: 15px;
    gap: 8px;
 }
 
-.dramacard>img{
+.dramacard>img,.image-link{
   margin: 10px;
   width: 200px;
   height: 260px;
@@ -233,37 +237,114 @@ padding: 15px;
 /*end list page */
 /* details page */
 
-.hero-imgdeet{
-  /* linear gradient to see the text better , darkens bg */
-  background-image: url('/images/CLOY\ HERO.jpg');
-  /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
-  margin: 20px;
-  margin-bottom: 30px;
-  /* width: 1500px; */
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.details{
+  float: left;
+  width: 40%;
+  padding: 13px;
+  margin-left: 10px;
+  margin-right: 20px;
+   overflow: hidden;
+}
+.details img{
+  margin: 10px;
+  width: 400px;
+  height: 460px;
+  /* border-radius: 20px; */
+  cursor: pointer;
+  padding-left: 30px;
+
+}
+.drama-details{
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  
+
+}
+.trailer{
+  
+  height: 52px;
+  width: 171px;
+  border: none;
+  background-color: #C7A3C9;
+  color: #C7A3C9;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.trailer >a{
+  text-decoration: none;
+  color: black;
 }
 
-.hero-deettext{
-  text-align:left;
-  font-size: 25px;
-  font: bold;
-  color: rgb(0, 0, 0);
-  position: absolute;
-  overflow:hidden;
-  top: 50%;
-  left: 20%;
+/* responsiveness details */
+@media screen and (max-width :600px) {
+  .details{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width :600px) {
+ /* when screen size is less than 600px resize hero image */
+  .hero-img{ 
+  width: 500px;
+  height: 300px;
+  margin-left: 8px;
+  padding:5px;
+  }
+}
+@media screen and (max-width:800px){
+  .hero-txt{
+    font-size: 15px;
+    top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  }
 }
-.hero-deettext > span{
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  overflow:hidden;
+/* list page responsiveness */
+@media screen and (max-width:600px) {
+  .image-container{
+    /* flex-direction:column;
+    margin-top: 20px;
+  justify-content:space-evenly;
+  margin-right: 5px;
+  margin-left: 40px; */
+  margin: 10px;
+  width:90%;
+  gap: 10px;
+
+  }
+  .dramacard>img{
+  /* margin: 8px;
+  width: 350px;
+  height: 420px; */
+  width: 100%;
+  height: auto;
+  margin:10px;
+  }
+.buttons-pg2{
+ margin-left: 0;
+}
 
 }
 
+@media screen and (max-width:600px) {
+  .list-container>.search-bar{
+    text-align: center;
+  }
+  .list-container>.search-bar input[type="text"]{
+    width: 90%;
+    height: 50px;
+    font-size: 14px
+  }
+  .list-container>.search-bar button[type="submit"]{
+    margin: 5px;
+    width: 90px;
+    height: 30px;
+  }
 
+  .buttons-pg3,.buttons-pg4{
+  bottom: initial;
+    text-align: center;
+}
+}
 
