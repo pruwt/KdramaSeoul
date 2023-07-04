@@ -43,11 +43,13 @@ font-weight:bold;
   /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
   margin: 20px;
   margin-bottom: 50px;
+  width: 1480px;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  /* width: 97%; */
 }
 .hero-txt{
   text-align: center;
@@ -204,7 +206,7 @@ padding: 15px;
    gap: 8px;
 }
 
-.dramacard>img{
+.dramacard>img,.image-link{
   margin: 10px;
   width: 200px;
   height: 260px;
@@ -234,9 +236,7 @@ padding: 15px;
 }
 /*end list page */
 /* details page */
-.details-container{
-  /* display: grid; */
-}
+
 .details{
   float: left;
   width: 40%;
@@ -282,3 +282,69 @@ padding: 15px;
     width: 100%;
   }
 }
+
+@media screen and (max-width :600px) {
+ /* when screen size is less than 600px resize hero image */
+  .hero-img{ 
+  width: 500px;
+  height: 300px;
+  margin-left: 8px;
+  padding:5px;
+  }
+}
+@media screen and (max-width:800px){
+  .hero-txt{
+    font-size: 15px;
+    top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+/* list page responsiveness */
+@media screen and (max-width:600px) {
+  .image-container{
+    /* flex-direction:column;
+    margin-top: 20px;
+  justify-content:space-evenly;
+  margin-right: 5px;
+  margin-left: 40px; */
+  margin: 10px;
+  width:90%;
+  gap: 10px;
+
+  }
+  .dramacard>img{
+  /* margin: 8px;
+  width: 350px;
+  height: 420px; */
+  width: 100%;
+  height: auto;
+  margin:10px;
+  }
+.buttons-pg2{
+ margin-left: 0;
+}
+
+}
+
+@media screen and (max-width:600px) {
+  .list-container>.search-bar{
+    text-align: center;
+  }
+  .list-container>.search-bar input[type="text"]{
+    width: 90%;
+    height: 50px;
+    font-size: 14px
+  }
+  .list-container>.search-bar button[type="submit"]{
+    margin: 5px;
+    width: 90px;
+    height: 30px;
+  }
+
+  .buttons-pg3,.buttons-pg4{
+  bottom: initial;
+    text-align: center;
+}
+}
+
